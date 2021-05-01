@@ -9,6 +9,18 @@ export default class NavBar extends React.Component {
                     <span className='navbar-toggler-icon'></span>
                 </button>
 
+                <div className='collapse navbar-collapse d-flex align-items-center justify-content-between' id='navbarSupportedContent'>
+                    <div>
+                        <a href="#" className='list-unstyled m-4'>About</a>
+                        <a href="#" className='list-unstyled'>Store</a>
+                    </div>
+                    <div>
+                        <a href="#" className='list-unstyled'>Gmail</a>
+                        <a href="#" className='list-unstyled m-4'>Images</a>
+                    </div>
+
+                </div>
+
 
 
             </nav>
