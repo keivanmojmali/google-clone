@@ -34,10 +34,9 @@ export default class HomePage extends React.Component {
                                 <button type='button' className='btn btn-sm btn-muted p-1 m-2'>I'm Feeling Lucky</button>
                             </div>
                         </div>
-                        <div className="row">
-                            <div className="col">
-                                <p>Everyone ages 16 and up can get the COVID-19 vaccine.</p>
-                                <a href="https://www.google.com/search?q=covid+vaccine+near+me">Find a vaccination site near you</a>
+                        <div className="row m-3">
+                            <div className="col d-flex justify-content-center align-items-center">
+                                <p>Everyone ages 16 and up can get the COVID-19 vaccine. <span className='text-primary m-5' href='https://www.google.com/search?q=covid+vaccine+near+me'>Find a vaccination site near you</span></p>
                             </div>
                         </div>
                     </div>
