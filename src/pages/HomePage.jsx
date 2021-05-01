@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from './NavBar';
 
+
 export default class HomePage extends React.Component {
     constructor(props){
         super(props);
@@ -24,8 +25,10 @@ export default class HomePage extends React.Component {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col">
-                                {/* search bar goes here */}
+                            <div className="col d-flex justify-content-center align-items-center">
+                                <form action="#" className='search-bar'>
+                                    <input type="text" className='w-100'/>
+                                </form>
                             </div>
                         </div>
                         <div className="row">
