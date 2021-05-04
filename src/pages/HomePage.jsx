@@ -21,7 +21,9 @@ export default class HomePage extends React.Component {
             return result.json();
         })
         .then(data =>{
-            console.log(data,data.rows)
+            console.log(data)
+            //YUOU NEED TO TAHE THE DATA AND PASS IT TO THE PROPS FUNCTION THAT WILL SET THE SEARCH TERM AND THE INFO FROM THE QUERY INTO THE PARENT AND THEN CHANGE THAT TO 
+            //THE PARENT SEARCH PAGE
 
         })
         .catch( err=> {
