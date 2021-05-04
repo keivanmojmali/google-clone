@@ -7,12 +7,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 .search-bar{
   width: 52%;
   border-radius: 20%;
+}
+
+.main-font {
+  font-family: Helvetica, sans-serif;
+  font-size: .9rem;
+  color: black !important;
+  text-decoration: none;
+
+}
+
+.fas {
+  position: absolute;
+  left: .5;
+}
+
+.relative{
+  position: relative;
 }

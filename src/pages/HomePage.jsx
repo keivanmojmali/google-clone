@@ -50,7 +50,7 @@ export default class HomePage extends React.Component {
                         <div className="row">
                             <div className="col d-flex justify-content-center align-items-center">
                                 <form action="#" className='search-bar' >
-                                    <input type="text" className='w-100' value={this.state.searchTerm} 
+                                    <input type="text" className='w-100 main-font relative' value={this.state.searchTerm} 
                                     onChange={this.onChange}
                                     />
                                     <div className="row">
