@@ -34,12 +34,8 @@ export default class HomePage extends React.Component {
     }
     render() {
         return (
-            <div className="container-fluid m-0 p-0">
-                <div className="row">
-                    <div className="col">
-                        <NavBar />
-                    </div>
-                </div>
+            <div className="row m-0 p-0">
+                <div className="col">
                 <div className="row">
                     <div className="col">
                         <div className="row">
@@ -68,6 +64,7 @@ export default class HomePage extends React.Component {
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         )
