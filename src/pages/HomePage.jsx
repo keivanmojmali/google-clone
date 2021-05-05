@@ -21,7 +21,11 @@ export default class HomePage extends React.Component {
             return result.json();
         })
         .then(data =>{
-            console.log(data,data.rows)
+            const sendObject = {
+                searchTerm: this.state.searchTerm,
+                results: data,
+            };
+            this.props.setSearchTerms(sendObject);
 
         })
         .catch( err=> {
