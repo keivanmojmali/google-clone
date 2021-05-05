@@ -23,7 +23,7 @@ export default class HomePage extends React.Component {
         .then(data =>{
             const sendObject = {
                 searchTerm: this.state.searchTerm,
-                results: data.items,
+                results: data,
             };
             this.props.setSearchTerms(sendObject);
 
