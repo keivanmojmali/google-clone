@@ -13,7 +13,6 @@ export default class MainPage extends React.Component {
         this.currentPage = this.currentPage.bind(this);
     };
     setSearchTerms(searchObject){
-        console.log(searchObject);
         this.setState({searchObject});
         
     }
