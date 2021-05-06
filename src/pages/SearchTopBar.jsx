@@ -14,19 +14,18 @@ export default class SearchTopBar extends React.Component {
         this.setState(newSearchTerm);
 
     };
-    handleSubmit(){
-                //YOU NEED TO CHANGE THIS SO THAT THE THING THAT IS QUERRYING IS THE MAIN PAGE
-        //AND NOT THE HOME PAGE - AND WHEN THIS NEW SEARCH TERM IS SO UP 
-        //IT WILL ACTUALLY SEND A NEW QUERY AS WELL AND NOT JUST STATE HERE
+    handleSubmit(event){
+        const term = event.target.value;
+        this.props.setNewSearchTerm(term);
     }
     render(){
         return(
-            <div className="row d-flex">
-                <div className="col align-self-start">
+            <div className="row d-flex m-4">
+                <div className="col-2 align-self-start">
                     <img src="https://www.google.com/logos/doodles/2021/celebrating-hisaye-yamamoto-6753651837109044-s.png" alt="googles main logo"/>
                 </div>
-                <div className="col">
-                    <input type="text" className="main-font"
+                <div className="col ml-3">
+                    <input type="text" className="main-font h-100 w-75"
                     onChange={this.onChange} handleSubmit={this.handleSubmit}
                     />
                 </div>

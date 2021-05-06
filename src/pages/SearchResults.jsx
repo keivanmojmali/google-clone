@@ -11,7 +11,18 @@ export default class SearchResults extends React.Component {
     render(){
         return(
             <div className="row">
-                <h1>Hellllo</h1>
+                        <div className="row d-flex m-4">
+                <div className="col-2 align-self-start">
+
+                </div>
+                <div className="col ml-3">
+                    <div className="row">
+                        <div className="col">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         )
     }

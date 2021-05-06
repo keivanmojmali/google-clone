@@ -14,23 +14,8 @@ export default class HomePage extends React.Component {
     };
     handleSubmit(event){
         event.preventDefault();
-        console.log(this.state.searchTerm);
-
-        fetch(`https://www.googleapis.com/customsearch/v1?key=AIzaSyAC_94jn8Bj1CWIaCnmf55ya61W3QOHAFI&cx=60e7b95840ba1222b&q=${this.state.searchTerm}`)
-        .then(result => {
-            return result.json();
-        })
-        .then(data =>{
-            const sendObject = {
-                searchTerm: this.state.searchTerm,
-                results: data,
-            };
-            this.props.setSearchTerms(sendObject);
-
-        })
-        .catch( err=> {
-            console.error(err);
-        })
+        const searchTerm = this.state.searchTerm;
+        this.props.querryApi(searchTerm);
     }
     onChange(searchQuerry){
         const searchTerm = searchQuerry.target.value;
