@@ -20,7 +20,7 @@ export default class SearchTopBar extends React.Component {
     }
     render(){
         return(
-            <div className="row d-flex m-4">
+            <div className="row d-flex ml-4 mt-4">
                 <div className="col-2 align-self-start">
                     <img src="https://www.google.com/logos/doodles/2021/celebrating-hisaye-yamamoto-6753651837109044-s.png" alt="googles main logo"/>
                 </div>
