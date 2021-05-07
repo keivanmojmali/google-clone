@@ -24,3 +24,4 @@ export default class SearchResults extends React.Component {
         )
     }
 }
+//THE ICON WAS FAS WHICH WAS ABSOLUTE - YOU NEED TO MAKE IT RELATIVE OR SOMETHING ELSE
