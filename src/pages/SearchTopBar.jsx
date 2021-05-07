@@ -6,7 +6,7 @@ export default class SearchTopBar extends React.Component {
         this.state = {
             searchTerm: '',
         };
-        this.handleSubmit = this.handleSubmit.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
     };
     onChange(event){
         event.preventDefault();
@@ -14,7 +14,7 @@ export default class SearchTopBar extends React.Component {
         this.setState(newSearchTerm);
 
     };
-    handleSubmit(event){
+    onSubmit(event){
         const term = event.target.value;
         this.props.setNewSearchTerm(term);
     }
@@ -26,7 +26,7 @@ export default class SearchTopBar extends React.Component {
                 </div>
                 <div className="col ml-3">
                     <input type="text" className="main-font h-100 w-75"
-                    onChange={this.onChange} handleSubmit={this.handleSubmit}
+                    onChange={this.onChange} onSubmit={this.onSubmit}
                     />
                 </div>
             </div>

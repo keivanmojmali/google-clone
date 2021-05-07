@@ -16,7 +16,7 @@ export default class SearchResults extends React.Component {
             <div className="row border-bottom">
                 <div className="col">
                     <div className='d-flex justify-content-center'>
-                        <i className=' fas fa-binoculars'></i>
+            
                         <p>All</p>
                     </div>
                 </div>
