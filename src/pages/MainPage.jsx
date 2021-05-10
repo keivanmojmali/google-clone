@@ -8,7 +8,7 @@ export default class MainPage extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            searchObject: '', //Once you are done editing this code - change to null,
+            searchObject: null, //Once you are done editing this code - change to null,
             searchTerm: '',
         };
         this.currentPage = this.currentPage.bind(this);
@@ -27,6 +27,7 @@ export default class MainPage extends React.Component {
                 searchTerm,
                 data,
             };
+            console.log(searchObject);
             this.setState({searchObject});
 
         })

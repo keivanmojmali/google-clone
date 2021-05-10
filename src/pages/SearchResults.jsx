@@ -3,10 +3,10 @@ import React from 'react';
 export default class SearchResults extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-
-        };
-
+        this.results = this.results.bind(this);
+    }
+    results(){
+        return `About ${this.props.searchObject.data.searchInformation.formattedTotalResults} (${this.props.searchObject.data.searchInformation.searchTime}) `;
     }
     onClick(tab) {
         //add change page information here possibly send something up to main page
@@ -15,7 +15,7 @@ export default class SearchResults extends React.Component {
         return (
             <div className="row">
                 <div className="col">
-
+                    {this.results()}
                 </div>
             </div>
         )

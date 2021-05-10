@@ -32,7 +32,7 @@ export default class SearchTopBar extends React.Component {
                     />
                 </div>
             </div>
-            <div className="row">
+            <div className="row mb-1">
                 <div className="col">
                 <ul className='d-flex justify-content-between align-items-center mb-0 mt-4 p-0'>
                     <li className='d-flex justify-content-center align-items-center '>
