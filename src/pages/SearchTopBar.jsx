@@ -24,18 +24,18 @@ export default class SearchTopBar extends React.Component {
                 <div className="col-2 align-self-start">
                     <img src="https://www.google.com/logos/doodles/2021/celebrating-hisaye-yamamoto-6753651837109044-s.png" alt="googles main logo"/>
                 </div>
-                <div className="col ml-3">
+                <div className="col-6 ml-3 w-50">
             <div className="row">
                 <div className="col">
-                <input type="text" className="main-font h-100 w-75"
+                <input type="text" className="main-font h-100 w-100"
                     onChange={this.onChange} onSubmit={this.onSubmit}
                     />
                 </div>
             </div>
             <div className="row">
                 <div className="col">
-                <ul className='d-flex justify-content-center align-items-center mb-0 mt-4'>
-                    <li className='d-flex justify-content-start align-items-center '>
+                <ul className='d-flex justify-content-between align-items-center mb-0 mt-4 p-0'>
+                    <li className='d-flex justify-content-center align-items-center '>
                         All
                     </li>
                     <li className='d-flex justify-content-center align-items-center '>
